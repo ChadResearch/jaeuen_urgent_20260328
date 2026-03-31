@@ -1,0 +1,47 @@
+# Data Collection {.unnumbered}
+
+## 검색 전략
+
+### KCI (한국학술지인용색인)
+
+| 항목 | 내용 |
+|------|------|
+| 검색어 | 제목에 "콘텐츠" AND "산업" |
+| 검색일 | 2026-03-28 |
+| 결과 | 416건 |
+| 기간 | 2004-2026 |
+| 파일 | `콘텐츠_KCI목록(260328).xls` |
+
+### WoS (Web of Science)
+
+| 항목 | 내용 |
+|------|------|
+| 검색어 | TS=("content industry" OR "creative industry" OR "cultural industry") |
+| 검색일 | 2026-03-28 |
+| 결과 | 489건 (정제 후 311건) |
+| 기간 | 1996-2026 |
+| 파일 | `wos_savedrecs.txt` |
+| 노이즈 | 주제 무관 178건 제거 (36.4%) |
+
+### RQ별 검색 키워드 매핑
+
+| RQ | 분석 방법 | 핵심 키워드 |
+|----|----------|------------|
+| RQ1 (시기별 전환) | 기술통계, 키워드 빈도, STM | content industry, cultural industry, creative industry |
+| RQ2 (비즈니스 영역) | 키워드 분류, STM, 비즈니스 태깅 | business model, policy, platform, technology, labor |
+| RQ3 (지식 네트워크) | 동시출현 네트워크, 중심성, 커뮤니티 | 저자키워드 전체 (KCI 1,506개 + WoS 1,224개) |
+| RQ4 (편중과 공백) | 갭 분석, 영역별 비율, 시기별 트렌드 | 7개 비즈니스 하위영역 키워드 사전 |
+
+## 데이터 정제
+
+### KCI 정제
+
+- 원본: 41개 컬럼 -> 정제: 18개 핵심 컬럼
+- 출력: `kci_content_industry_clean.csv`
+- 핵심 컬럼: id, article_id, authors, affiliation, title_kr, title_en, journal, language, keywords_kr, keywords_en, abstract_kr, abstract_en, ref_count, citation_count, year, field, kci_type, doi
+
+### WoS 정제
+
+- 원본: 489건 -> 정제: 311건
+- 주제 무관 논문 178건 제거 (36.4% 노이즈율)
+- 제거 기준: 콘텐츠 산업과 관련 없는 자연과학, 의학, 공학 논문

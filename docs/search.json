@@ -1,0 +1,634 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "콘텐츠는 어떻게 산업으로 연구되어 왔는가?: 국내 콘텐츠 산업 연구에 대한 체계적 문헌고찰과 네트워크 분석",
+    "section": "",
+    "text": "콘텐츠는 어떻게 산업으로 연구되어 왔는가?: 국내 콘텐츠 산업 연구에 대한 체계적 문헌고찰과 네트워크 분석",
+    "crumbs": [
+      "콘텐츠는 어떻게 산업으로 연구되어 왔는가?: 국내 콘텐츠 산업 연구에 대한 체계적 문헌고찰과 네트워크 분석"
+    ]
+  },
+  {
+    "objectID": "index.html#project-details",
+    "href": "index.html#project-details",
+    "title": "콘텐츠는 어떻게 산업으로 연구되어 왔는가?: 국내 콘텐츠 산업 연구에 대한 체계적 문헌고찰과 네트워크 분석",
+    "section": "Project Details",
+    "text": "Project Details\n\n\n\nItem\nValue\n\n\n\n\nOwner\n채충일\n\n\nType\nResearch\n\n\nStatus\n분석 완료, 논문 초고 작성 중\n\n\nCreated\n2026-03-28\n\n\nCollaboration\npersonal\n\n\nPeople\n권장욱, 이재은, 채충일\n\n\nDeadline\n2026-03-28",
+    "crumbs": [
+      "콘텐츠는 어떻게 산업으로 연구되어 왔는가?: 국내 콘텐츠 산업 연구에 대한 체계적 문헌고찰과 네트워크 분석"
+    ]
+  },
+  {
+    "objectID": "index.html#description",
+    "href": "index.html#description",
+    "title": "콘텐츠는 어떻게 산업으로 연구되어 왔는가?: 국내 콘텐츠 산업 연구에 대한 체계적 문헌고찰과 네트워크 분석",
+    "section": "Description",
+    "text": "Description\n제목: 콘텐츠는 어떻게 산업으로 연구되어 왔는가?: 국내 콘텐츠 산업 연구에 대한 체계적 문헌고찰과 네트워크 분석\n\n연구질문\n\nRQ1. 콘텐츠 산업 연구는 시기별로 어떠한 주요 주제와 개념적 전환을 보여 왔는가?\nRQ2. 콘텐츠 산업 연구에서 비즈니스적 관점은 어떠한 하위 영역으로 구성되어 왔는가?\nRQ3. 콘텐츠 산업 연구의 핵심 키워드와 주제들은 어떠한 지식 네트워크를 형성하고 있는가?\nRQ4. 콘텐츠 산업 연구의 주요 편중과 공백은 무엇이며, 향후 확장 방향은 무엇인가?\n\n\n\n주요 발견\n\n데이터: KCI 416편 + WoS 311편(정제) = 727편, PRISMA 선별 후 524편 최종 분석 (1996-2026)\n키워드 겹침률 4.3%: KCI와 WoS가 사실상 다른 어휘 체계를 사용\n정책 갭: KCI 21.1% vs WoS 8.2% – 국내 연구의 정책 편중\n비즈니스 갭: KCI 12.1% vs WoS 16.9% – 국제 연구의 비즈니스 지향\n3대 비대칭: 지식 체계의 비대칭, 연구 초점의 비대칭, 진화 동인의 비대칭\n8대 이론: 문화산업론, 창조산업론, 가치사슬론, 플랫폼경제론, 장이론, 혁신확산이론, 문화경제학, 산업조직론\n분석 방법: PRISMA 2020, bibliometrix, STM(K=7), 키워드 네트워크 분석, 6 Phase R 파이프라인",
+    "crumbs": [
+      "콘텐츠는 어떻게 산업으로 연구되어 왔는가?: 국내 콘텐츠 산업 연구에 대한 체계적 문헌고찰과 네트워크 분석"
+    ]
+  },
+  {
+    "objectID": "rl_research_log.html",
+    "href": "rl_research_log.html",
+    "title": "Research Log",
+    "section": "",
+    "text": "2026-03-28",
+    "crumbs": [
+      "Research Logs",
+      "Research Log"
+    ]
+  },
+  {
+    "objectID": "rl_research_log.html#section",
+    "href": "rl_research_log.html#section",
+    "title": "Research Log",
+    "section": "",
+    "text": "데이터 수집 (Phase 0)\n\nKCI에서 “콘텐츠” AND “산업” 제목 검색으로 416건 수집\nWoS에서 TS=(“content industry” OR “creative industry” OR “cultural industry”) 검색으로 489건 수집\nKCI 데이터 정제: 41컬럼 -&gt; 18핵심컬럼 (kci_content_industry_clean.csv)\nWoS 데이터 정제: 489건 -&gt; 311건 (주제 무관 178건 제거, 36.4% 노이즈)\n\n\n\nPRISMA 스크리닝 (Phase 1)\n\n수집 905건 (KCI 416 + WoS 489) -&gt; 중복제거 895건 (-10건)\nScholarRAG v1.2.4 AI-PRISMA 스크리닝 실행\n\n자동 포함 (score&gt;=40): 449건 (50.2%)\n검토 대기: 250건 (27.9%)\n자동 제외: 196건 (21.9%)\n\n최종 선정 524건 (자동포함 449 + 검토대기 상위30% 75건)\n\nKCI 315편 (60.1%), WoS 209편 (39.9%)\n\n\n\n\nR 기반 교차비교 분석 (Phase 1-6)\n\n14개 R 스크립트로 6개 Phase 분석 파이프라인 실행\nPhase 1: 기술통계 교차비교 – 연도추이, 학술지, 인용, 종합 (그래프 9개, 테이블 8개)\nPhase 2: 키워드 교차비교 – 키워드 겹침률 4.3% 발견 (그래프 3개, 테이블 4개)\nPhase 3: STM 토픽모델 – KCI 7토픽, WoS 7토픽, 통합 9토픽 (그래프 9개, 테이블 5개)\nPhase 4: 키워드 네트워크 – 밀도(KCI 0.175 vs WoS 0.170), Thematic Map (그래프 5개, 테이블 4개)\nPhase 5: 갭 분석 – 정책/제도 KCI 21.1% vs WoS 8.2% (그래프 2개, 테이블 3개)\nPhase 6: 시기별 Thematic Evolution + Three-Field Plot (그래프 11개, 테이블 3개)\n총 산출물: 그래프 35개, 테이블 25개\n\n\n\nRAG 구축 및 문서 생성 (Phase 7)\n\nfinalized_papers.json (524편) 기반 ChromaDB 벡터 DB 구축\n임베딩: all-MiniLM-L6-v2 (384차원)\n5개 산출물 생성:\n\n구조화 분석표 (524편 x 19열)\n주석 참고문헌 (524편)\n개념적 프레임워크 (8이론, 4층 다이어그램)\n통합적 문헌고찰 (~9,500자)\nRQ별 에세이 4편\n\n\n\n\n논문 초고 작성 (Phase 8)\n\nQuarto + apaquarto (APA 7th Edition) 템플릿으로 Draft.qmd 작성\nreference.bib 구축 (532항목: 방법론 8 + 논문 524)\n분석 그래프 21개 + 분석 CSV 7개 포함\n한국어 본문, 영문 메타데이터, PDF/DOCX/HTML 동시 출력 설정",
+    "crumbs": [
+      "Research Logs",
+      "Research Log"
+    ]
+  },
+  {
+    "objectID": "rl_meeting_log.html",
+    "href": "rl_meeting_log.html",
+    "title": "Meeting Log",
+    "section": "",
+    "text": "xxxx-xx-xx",
+    "crumbs": [
+      "Research Logs",
+      "Meeting Log"
+    ]
+  },
+  {
+    "objectID": "rl_meeting_log.html#xxxx-xx-xx",
+    "href": "rl_meeting_log.html#xxxx-xx-xx",
+    "title": "Meeting Log",
+    "section": "",
+    "text": "10:00-10:30: Kick-off meeting",
+    "crumbs": [
+      "Research Logs",
+      "Meeting Log"
+    ]
+  },
+  {
+    "objectID": "rl_analysis_version_log.html",
+    "href": "rl_analysis_version_log.html",
+    "title": "Analysis Version",
+    "section": "",
+    "text": "Version 0.0.1",
+    "crumbs": [
+      "Research Logs",
+      "Analysis Version"
+    ]
+  },
+  {
+    "objectID": "rl_analysis_version_log.html#version-0.0.1",
+    "href": "rl_analysis_version_log.html#version-0.0.1",
+    "title": "Analysis Version",
+    "section": "",
+    "text": "Starting draft",
+    "crumbs": [
+      "Research Logs",
+      "Analysis Version"
+    ]
+  },
+  {
+    "objectID": "rl_draft_version_log.html",
+    "href": "rl_draft_version_log.html",
+    "title": "Draft Version",
+    "section": "",
+    "text": "Ver 0.0.1",
+    "crumbs": [
+      "Research Logs",
+      "Draft Version"
+    ]
+  },
+  {
+    "objectID": "rl_draft_version_log.html#ver-0.0.1",
+    "href": "rl_draft_version_log.html#ver-0.0.1",
+    "title": "Draft Version",
+    "section": "",
+    "text": "Starting draft",
+    "crumbs": [
+      "Research Logs",
+      "Draft Version"
+    ]
+  },
+  {
+    "objectID": "tf_related_theories.html",
+    "href": "tf_related_theories.html",
+    "title": "Related Theories",
+    "section": "",
+    "text": "이론별 콘텐츠 산업 연구 적용\n524편의 체계적 문헌고찰에서 콘텐츠 산업 연구에 활용되는 8개 이론적 기반을 식별하였다.",
+    "crumbs": [
+      "Theoritical Framework",
+      "Related Theories"
+    ]
+  },
+  {
+    "objectID": "tf_related_theories.html#이론별-콘텐츠-산업-연구-적용",
+    "href": "tf_related_theories.html#이론별-콘텐츠-산업-연구-적용",
+    "title": "Related Theories",
+    "section": "",
+    "text": "1. 문화산업론 (Cultural Industry Theory)\n초기(1996-2005) 연구에서 ‘문화산업’의 범주화와 정당성 논의의 근거로 활용. 권창규(2014)의 ’문화에서 콘텐츠로’ 연구가 대표적. 2010년대 이후 직접적 인용은 감소했으나, 콘텐츠의 ‘공공재적 성격’과 ’시장실패’ 논의의 암묵적 전제로 작동한다.\n\n\n2. 창조산업론 (Creative Industries Framework)\n산업 분류와 범주화 연구(안인자, 2006)의 핵심 참조 틀. 정부 지원의 정당성을 뒷받침하는 개념적 토대. Ammirato 등(2025)의 Cultural Industries 4.0 연구가 디지털 전환 맥락으로 확장한 최근 사례.\n\n\n3. 가치사슬론 (Value Chain Theory)\n‘기획-제작-유통-소비-2차활용’ 콘텐츠 가치사슬 분석의 표준 틀로 채택. 그러나 가치사슬 전반을 통합적으로 조망하는 연구는 극히 드물며, 대부분 특정 단계(제작 또는 유통)에 편중.\n\n\n4. 플랫폼경제론 (Platform Economics)\n2016년 넷플릭스 한국 시장 진출을 기점으로 급부상. ‘Netflix’(6회), ‘OTT’(5회), ‘platform’(43편) 관련 연구가 집중적으로 생산. 송윤아(2024)의 넷플릭스 글로벌 성장전략 연구가 대표적.\n\n\n5. 장이론 (Field Theory)\n명시적 인용은 제한적이나, ‘문화’와 ’산업’의 긴장이라는 근본적 딜레마를 이론적으로 해명하는 데 유효. 한류 연구에서 ’문화적 할인’과 ’문화적 근접성’ 개념의 암묵적 활용.\n\n\n6. 혁신확산이론 (Innovation Diffusion Theory)\n기술혁신 관련 연구(326편, 62%)의 암묵적 이론 틀로 가장 광범위하게 작동. VR, AR, 메타버스, AI 등 신기술의 콘텐츠 산업 적용 가능성을 탐색하는 연구 다수가 이 프레임워크에 의존.\n\n\n7. 문화경제학 (Cultural Economics)\n산업연관분석, 경제적 파급효과 분석, 부가가치 측정 연구의 이론적 근거. 그러나 ’문화적 가치’와 ’경제적 가치’의 이중성 논의는 한국 콘텐츠 산업 연구에서 상대적으로 소홀.\n\n\n8. 산업조직론 (Industrial Organization Theory)\n시장 집중도 분석, 규제 효과 평가, 경쟁 정책 논의에서 SCP 패러다임이 명시적/암묵적으로 활용. 디지털 플랫폼 등장으로 전통적 SCP 패러다임의 적용 가능성에 대한 이론적 재검토가 요구되는 상황.",
+    "crumbs": [
+      "Theoritical Framework",
+      "Related Theories"
+    ]
+  },
+  {
+    "objectID": "tf_relationship_between_theories.html",
+    "href": "tf_relationship_between_theories.html",
+    "title": "Theortical Relationship",
+    "section": "",
+    "text": "이론 간 관계: 3층 분석 수준 구조\n8개 이론은 분석 수준에 따라 거시-중범위-미시의 3층 구조를 형성한다.",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theortical Relationship"
+    ]
+  },
+  {
+    "objectID": "tf_relationship_between_theories.html#이론-간-관계-3층-분석-수준-구조",
+    "href": "tf_relationship_between_theories.html#이론-간-관계-3층-분석-수준-구조",
+    "title": "Theortical Relationship",
+    "section": "",
+    "text": "거시 (사회-문화-국민경제 구조)\n  ├── 문화산업론 (Horkheimer & Adorno, 1944)\n  ├── 창조산업론 (DCMS, 1998)\n  └── 문화경제학 (Throsby, 2001)\n      │\n      ▼\n중범위 (산업-시장-기업)\n  ├── 가치사슬론 (Porter, 1985)\n  ├── 플랫폼경제론 (Rochet & Tirole, 2003)\n  ├── 산업조직론 (Mason, 1939 / SCP 패러다임)\n  └── 혁신확산이론 (Rogers, 1962)\n      │\n      ▼\n미시 (행위자-개인)\n  └── 장이론 (Bourdieu, 1993) — 거시-미시 연결",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theortical Relationship"
+    ]
+  },
+  {
+    "objectID": "tf_relationship_between_theories.html#시기별-이론-부상과-쇠퇴",
+    "href": "tf_relationship_between_theories.html#시기별-이론-부상과-쇠퇴",
+    "title": "Theortical Relationship",
+    "section": "시기별 이론 부상과 쇠퇴",
+    "text": "시기별 이론 부상과 쇠퇴\n\n\n\n\n\n\n\n\n\n\n시기\n연도\n논문 수\n지배적 이론\n부상 이론\n\n\n\n\n태동기\n1996-2005\n9편\n문화산업론, 장이론\n산업조직론\n\n\n성장기\n2006-2010\n59편\n창조산업론\n가치사슬론, 문화경제학\n\n\n확장기\n2011-2015\n84편\n문화경제학, 산업조직론\n가치사슬론, 혁신확산이론\n\n\n전환기\n2016-2026\n372편\n플랫폼경제론, 혁신확산이론\n(미시 수준 공백)",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theortical Relationship"
+    ]
+  },
+  {
+    "objectID": "tf_relationship_between_theories.html#이론-간-핵심-관계",
+    "href": "tf_relationship_between_theories.html#이론-간-핵심-관계",
+    "title": "Theortical Relationship",
+    "section": "이론 간 핵심 관계",
+    "text": "이론 간 핵심 관계\n\n거시 -&gt; 중범위 하향 경로\n\n문화산업론 -&gt; 산업조직론: ‘문화의 산업화’ 정당성이 확보된 이후, 시장 구조 분석(SCP)으로 연구 초점 이동\n창조산업론 -&gt; 가치사슬론: 창조산업의 경계가 설정된 후, 내부 가치 활동의 연쇄적 구조 분석으로 전환\n문화경제학 -&gt; 혁신확산이론: 경제적 파급효과 측정에서 기술 채택 결정요인 분석으로 확장\n\n\n\n중범위 내부 상호작용\n\n가치사슬론 &lt;-&gt; 플랫폼경제론: 전통적 선형 가치사슬(기획-제작-유통-소비)이 플랫폼 생태계에 의해 비선형 네트워크로 재편\n혁신확산이론 &lt;-&gt; 산업조직론: 기술 혁신의 확산 패턴이 시장 구조(집중도, 진입장벽)에 의해 조절됨\n\n\n\n거시-미시 연결 (장이론의 역할)\n\n장이론은 거시적 산업 구조와 미시적 행위자(창작자, 기업) 사이를 연결\n’문화’와 ’산업’의 긴장 관계, 경제자본과 문화자본 간 역학을 설명\n한류 연구에서 ‘문화적 할인(cultural discount)’과 ’문화적 근접성(cultural proximity)’ 분석에 암묵적으로 활용",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theortical Relationship"
+    ]
+  },
+  {
+    "objectID": "tf_relationship_between_theories.html#이론-rq-매핑",
+    "href": "tf_relationship_between_theories.html#이론-rq-매핑",
+    "title": "Theortical Relationship",
+    "section": "이론-RQ 매핑",
+    "text": "이론-RQ 매핑\n\n\n\n\n\n\n\n\n\n\n이론\nRQ1 (시기별 전환)\nRQ2 (비즈니스 영역)\nRQ3 (지식 네트워크)\nRQ4 (편중과 공백)\n\n\n\n\n문화산업론\nO\n\n\nO\n\n\n창조산업론\nO\nO\n\n\n\n\n가치사슬론\n\nO\n\nO\n\n\n플랫폼경제론\n\nO\nO\n\n\n\n장이론\nO\n\n\nO\n\n\n혁신확산이론\n\nO\nO\n\n\n\n문화경제학\nO\nO\n\n\n\n\n산업조직론\n\nO\nO",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theortical Relationship"
+    ]
+  },
+  {
+    "objectID": "tf_theoretical_framework.html",
+    "href": "tf_theoretical_framework.html",
+    "title": "Theoritical Framework",
+    "section": "",
+    "text": "4층 분석 프레임워크\n본 연구의 개념적 프레임워크는 4개의 분석 층위로 구성된다.\n각 층위는 상위 층위로부터 이론적 정당성을 부여받으며, 하위 층위로 조작화(operationalization)된다.",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theoritical Framework"
+    ]
+  },
+  {
+    "objectID": "tf_theoretical_framework.html#층-분석-프레임워크",
+    "href": "tf_theoretical_framework.html#층-분석-프레임워크",
+    "title": "Theoritical Framework",
+    "section": "",
+    "text": "층위\n구성요소\n설명\n\n\n\n\n이론층\n8개 이론적 기반\n문화산업론, 창조산업론, 가치사슬론, 플랫폼경제론, 장이론, 혁신확산이론, 문화경제학, 산업조직론\n\n\n구성개념층\n핵심 구성개념\n산업 정체성, 기술-미디어 융합, 글로벌 유통, 정책 거버넌스\n\n\n변수층\nIV/DV/Med/Mod 변수 체계\n독립변수 4개, 종속변수 3개, 매개변수 2개, 조절변수 2개\n\n\n방법론층\n분석 방법\nPRISMA 2020, 키워드 네트워크, STM, 교차비교 갭 분석",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theoritical Framework"
+    ]
+  },
+  {
+    "objectID": "tf_theoretical_framework.html#변수-체계",
+    "href": "tf_theoretical_framework.html#변수-체계",
+    "title": "Theoritical Framework",
+    "section": "변수 체계",
+    "text": "변수 체계\n\n독립변수 (Independent Variables)\n\n\n\n\n\n\n\n\n변수\n조작적 정의\n빈도\n\n\n\n\n기술혁신\nVR/AR, AI, 메타버스, 블록체인 등 신기술의 콘텐츠 산업 도입 정도\n326편 (62%)\n\n\n정책지원\n정부의 재정 지원, 세제 혜택, 규제 완화 등 산업 진흥 정책의 강도\n88편 (17%)\n\n\n글로벌화\n콘텐츠의 해외 수출, 국제 공동제작, 문화적 할인 극복\n53편 (10%)\n\n\n플랫폼 생태계\nOTT, 소셜미디어, 앱마켓 등 디지털 플랫폼의 시장 지배력\n43편 (8%)\n\n\n\n\n\n종속변수 (Dependent Variables)\n\n\n\n\n\n\n\n\n변수\n조작적 정의\n측정 지표\n\n\n\n\n산업 성장\n콘텐츠 산업의 양적 성장\n매출액 증가율, 수출액, GDP 기여도, 고용자 수\n\n\n경쟁력\n국내외 시장에서의 경쟁적 지위\n국제경쟁력 지수, LQ지수, 시장점유율\n\n\n부가가치\n생산 과정에서 창출되는 경제적-문화적 가치\n부가가치율, 산업연관 파급효과\n\n\n\n\n\n매개변수 (Mediating Variables)\n\n\n\n변수\n매개 경로\n\n\n\n\n콘텐츠 품질\n기술혁신 -&gt; 콘텐츠 품질 -&gt; 경쟁력\n\n\n인력 역량\n정책지원 -&gt; 인력 역량 -&gt; 부가가치\n\n\n\n\n\n조절변수 (Moderating Variables)\n\n\n\n변수\n조절 효과\n\n\n\n\n규제 환경\n기술혁신 x 규제환경 -&gt; 산업 성장\n\n\n시장 구조\n플랫폼 생태계 x 시장구조 -&gt; 경쟁력",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theoritical Framework"
+    ]
+  },
+  {
+    "objectID": "tf_theoretical_framework.html#변수-구조도",
+    "href": "tf_theoretical_framework.html#변수-구조도",
+    "title": "Theoritical Framework",
+    "section": "변수 구조도",
+    "text": "변수 구조도\n[독립변수]              [매개변수]           [종속변수]\n\n기술혁신 (326편) -----&gt; 콘텐츠 품질 -------&gt; 산업 성장\n정책지원 (88편) ------&gt; 인력 역량 ---------&gt; 부가가치\n글로벌화 (53편) ---------------------------&gt; 경쟁력\n플랫폼 생태계 (43편) ---------------------&gt; 부가가치\n\n[조절변수]\n규제 환경 (50+88편) ------(조절)----------&gt;\n시장 구조 (99편) ---------(조절)----------&gt;",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theoritical Framework"
+    ]
+  },
+  {
+    "objectID": "tf_theoretical_framework.html#hypothesis",
+    "href": "tf_theoretical_framework.html#hypothesis",
+    "title": "Theoritical Framework",
+    "section": "Hypothesis",
+    "text": "Hypothesis\n본 연구는 가설 검증형 연구가 아닌 체계적 문헌고찰(SLR)이므로, 전통적 가설 대신 4개의 연구질문(RQ1-RQ4)을 통해 콘텐츠 산업 연구의 지적 지형을 탐색적으로 분석한다. 위의 변수 체계는 524편의 문헌에서 귀납적으로 도출된 것이며, 향후 실증 연구에서 인과 관계를 검증하기 위한 분석적 준거로 제안된다.",
+    "crumbs": [
+      "Theoritical Framework",
+      "Theoritical Framework"
+    ]
+  },
+  {
+    "objectID": "mm_methodology.html",
+    "href": "mm_methodology.html",
+    "title": "Methdology",
+    "section": "",
+    "text": "연구 방법론 개요\n본 연구는 체계적 문헌고찰(Systematic Literature Review)을 핵심 방법론으로 채택하며, 다음 4가지 분석 접근법을 결합하였다.",
+    "crumbs": [
+      "Methodology and Method",
+      "Methdology"
+    ]
+  },
+  {
+    "objectID": "mm_methodology.html#연구-방법론-개요",
+    "href": "mm_methodology.html#연구-방법론-개요",
+    "title": "Methdology",
+    "section": "",
+    "text": "1. PRISMA 2020\n\n적용: 문헌 선별의 체계적 프로토콜\n프로세스: 식별(Identification) -&gt; 스크리닝(Screening) -&gt; 적합성(Eligibility) -&gt; 포함(Inclusion)\n도구: ScholarRAG v1.2.4 (AI-PRISMA 스크리닝)\n결과: 905건 수집 -&gt; 895건 (중복제거) -&gt; 524건 최종 선정\n\n\n\n2. Bibliometrix (계량서지분석)\n\n적용: 연구 동향의 양적 분석\n도구: R bibliometrix 패키지\n분석 내용: 연도별 출판 추이, 학술지 분포, 인용 분석, 저자 협업 네트워크\n데이터: KCI 416편 + WoS 311편 = 727편 (교차비교)\n\n\n\n3. STM (구조적 토픽모델링)\n\n적용: 잠재 주제 발견 및 교차비교\n도구: R stm 패키지\n설정: K=7 (KCI, WoS 각각), 통합 K=9 (Source 공변량)\n분석 내용: KCI 고유 토픽, WoS 고유 토픽, 공통/발산 토픽 식별\n\n\n\n4. 키워드 네트워크 분석\n\n적용: 지식 구조 및 주제 관계 시각화\n도구: R igraph, ggraph 패키지\n분석 내용: 동시출현 네트워크, 중심성 분석, 커뮤니티 탐지, Thematic Map\n지표: 밀도, 모듈러리티, 평균 경로 길이, Spearman 중심성 상관",
+    "crumbs": [
+      "Methodology and Method",
+      "Methdology"
+    ]
+  },
+  {
+    "objectID": "mm_methodology.html#kci-wos-교차비교-설계",
+    "href": "mm_methodology.html#kci-wos-교차비교-설계",
+    "title": "Methdology",
+    "section": "KCI-WoS 교차비교 설계",
+    "text": "KCI-WoS 교차비교 설계\n본 연구의 방법론적 독창성은 KCI(국내)와 WoS(국제) 데이터베이스를 병행 분석하는 교차비교 설계에 있다. 동일한 분석 파이프라인을 양쪽 데이터에 적용하여 국내외 연구의 공통점과 차이점을 체계적으로 비교한다.\n\n\n\n구분\nKCI (국내)\nWoS (국제)\n\n\n\n\n논문 수\n416건\n311건 (정제 후)\n\n\n기간\n2004-2026\n1996-2026\n\n\n학술지 수\n228개\n~200개\n\n\n평균 참고문헌\n28편\n65편\n\n\n평균 인용\n5.0회\n20.6회",
+    "crumbs": [
+      "Methodology and Method",
+      "Methdology"
+    ]
+  },
+  {
+    "objectID": "mm_method.html",
+    "href": "mm_method.html",
+    "title": "Method",
+    "section": "",
+    "text": "6 Phase 분석 파이프라인\n14개 R 스크립트를 통해 6개 Phase로 구성된 분석 파이프라인을 실행하였다. 총 그래프 35개, 테이블 25개를 산출하였다.",
+    "crumbs": [
+      "Methodology and Method",
+      "Method"
+    ]
+  },
+  {
+    "objectID": "mm_method.html#phase-분석-파이프라인",
+    "href": "mm_method.html#phase-분석-파이프라인",
+    "title": "Method",
+    "section": "",
+    "text": "Phase\n스크립트\n분석 내용\n산출물\n\n\n\n\n공통\n00_setup.R\n패키지/데이터/테마/색상 설정\n-\n\n\n1\nP1_01 ~ P1_04\n연도추이, 학술지, 인용, 종합 기술통계\n그래프 9개, 테이블 8개\n\n\n2\nP2_01\n키워드 교차비교 + 비즈니스 영역 분류\n그래프 3개, 테이블 4개\n\n\n3\nP3_01, P3_02\nSTM KCI/WoS/통합 + Source 공변량 분석\n그래프 9개, 테이블 5개, 모델 3개\n\n\n4\nP4_01, P4_02\n키워드 네트워크 + Thematic Map\n그래프 5개, 테이블 4개\n\n\n5\nP5_01\n갭 분석 교차비교\n그래프 2개, 테이블 3개\n\n\n6\nP6_01, P6_02\n시기별 Thematic Evolution + Three-Field Plot\n그래프 11개, 테이블 3개",
+    "crumbs": [
+      "Methodology and Method",
+      "Method"
+    ]
+  },
+  {
+    "objectID": "mm_method.html#phase별-상세",
+    "href": "mm_method.html#phase별-상세",
+    "title": "Method",
+    "section": "Phase별 상세",
+    "text": "Phase별 상세\n\nPhase 1: 기술통계 교차비교\n\n연도별 출판 추이 비교 (KCI 2004~ vs WoS 1996~)\n학술지 분포 및 분야별 집중도 분석\n인용 분석: KCI 평균 5.0회 vs WoS 20.6회\n참고문헌 격차: KCI 28편 vs WoS 65편 (2.3배)\n\n\n\nPhase 2: 키워드 교차비교\n\nKCI 1,506개 vs WoS 1,224개 키워드 집합 비교\n공통 키워드 118개 (겹침률 4.3%)\n7개 비즈니스 하위영역 분류 및 비율 비교\n\n\n\nPhase 3: STM 토픽모델\n\nKCI 7토픽, WoS 7토픽 독립 모델링\nSource 공변량 통합 STM (K=9)\nKCI 고유 토픽: 콘텐츠 법제도, 한류/중국 수출, 지역 관광 콘텐츠, 세제/e-러닝\nWoS 고유 토픽: 디지털 저작권/보안, AI/딥페이크/블록체인, 출판 비즈니스, SDG\n\n\n\nPhase 4: 키워드 네트워크\n\n네트워크 구조 지표: 밀도(KCI 0.175 vs WoS 0.170), 커뮤니티(4 vs 4)\n중심성 순위 상관: Spearman rho = -0.103 (p = 0.846, 무상관)\nThematic Map: KCI Motor = “콘텐츠 산업 자체”, WoS Motor = “비즈니스 모델”\n\n\n\nPhase 5: 갭 분석\n\n최대 갭: 정책/제도 (KCI 21.1% vs WoS 8.2%, +12.9)\nKCI 편중: 정책/제도, 글로벌/한류\nWoS 편중: 기술혁신, 수익/비즈니스\n\n\n\nPhase 6: 시기별 테마 진화\n\n급성장 키워드: metaverse, K-content, Netflix, OTT, AI (2021년 이후 80%+ 집중)\n쇠퇴 키워드: digital contents, creative industry, storytelling, china\n용어 변화: “contents industry” -&gt; “content industry” -&gt; “K-content”",
+    "crumbs": [
+      "Methodology and Method",
+      "Method"
+    ]
+  },
+  {
+    "objectID": "mm_method.html#분석-도구",
+    "href": "mm_method.html#분석-도구",
+    "title": "Method",
+    "section": "분석 도구",
+    "text": "분석 도구\n\nR 4.x: tidyverse, bibliometrix, stm, igraph, ggraph, ggplot2\nScholarRAG v1.2.4: ChromaDB + all-MiniLM-L6-v2 임베딩\nQuarto + apaquarto: 논문 초고 작성",
+    "crumbs": [
+      "Methodology and Method",
+      "Method"
+    ]
+  },
+  {
+    "objectID": "mm_data_collection_strategy.html",
+    "href": "mm_data_collection_strategy.html",
+    "title": "Data Collection",
+    "section": "",
+    "text": "검색 전략",
+    "crumbs": [
+      "Methodology and Method",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "mm_data_collection_strategy.html#검색-전략",
+    "href": "mm_data_collection_strategy.html#검색-전략",
+    "title": "Data Collection",
+    "section": "",
+    "text": "KCI (한국학술지인용색인)\n\n\n\n항목\n내용\n\n\n\n\n검색어\n제목에 “콘텐츠” AND “산업”\n\n\n검색일\n2026-03-28\n\n\n결과\n416건\n\n\n기간\n2004-2026\n\n\n파일\n콘텐츠_KCI목록(260328).xls\n\n\n\n\n\nWoS (Web of Science)\n\n\n\n\n\n\n\n항목\n내용\n\n\n\n\n검색어\nTS=(“content industry” OR “creative industry” OR “cultural industry”)\n\n\n검색일\n2026-03-28\n\n\n결과\n489건 (정제 후 311건)\n\n\n기간\n1996-2026\n\n\n파일\nwos_savedrecs.txt\n\n\n노이즈\n주제 무관 178건 제거 (36.4%)\n\n\n\n\n\nRQ별 검색 키워드 매핑\n\n\n\n\n\n\n\n\nRQ\n분석 방법\n핵심 키워드\n\n\n\n\nRQ1 (시기별 전환)\n기술통계, 키워드 빈도, STM\ncontent industry, cultural industry, creative industry\n\n\nRQ2 (비즈니스 영역)\n키워드 분류, STM, 비즈니스 태깅\nbusiness model, policy, platform, technology, labor\n\n\nRQ3 (지식 네트워크)\n동시출현 네트워크, 중심성, 커뮤니티\n저자키워드 전체 (KCI 1,506개 + WoS 1,224개)\n\n\nRQ4 (편중과 공백)\n갭 분석, 영역별 비율, 시기별 트렌드\n7개 비즈니스 하위영역 키워드 사전",
+    "crumbs": [
+      "Methodology and Method",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "mm_data_collection_strategy.html#데이터-정제",
+    "href": "mm_data_collection_strategy.html#데이터-정제",
+    "title": "Data Collection",
+    "section": "데이터 정제",
+    "text": "데이터 정제\n\nKCI 정제\n\n원본: 41개 컬럼 -&gt; 정제: 18개 핵심 컬럼\n출력: kci_content_industry_clean.csv\n핵심 컬럼: id, article_id, authors, affiliation, title_kr, title_en, journal, language, keywords_kr, keywords_en, abstract_kr, abstract_en, ref_count, citation_count, year, field, kci_type, doi\n\n\n\nWoS 정제\n\n원본: 489건 -&gt; 정제: 311건\n주제 무관 논문 178건 제거 (36.4% 노이즈율)\n제거 기준: 콘텐츠 산업과 관련 없는 자연과학, 의학, 공학 논문",
+    "crumbs": [
+      "Methodology and Method",
+      "Data Collection"
+    ]
+  },
+  {
+    "objectID": "mm_data.html",
+    "href": "mm_data.html",
+    "title": "Data",
+    "section": "",
+    "text": "데이터 개요",
+    "crumbs": [
+      "Methodology and Method",
+      "Data"
+    ]
+  },
+  {
+    "objectID": "mm_data.html#데이터-개요",
+    "href": "mm_data.html#데이터-개요",
+    "title": "Data",
+    "section": "",
+    "text": "구분\nKCI (국내)\nWoS (국제)\n합계\n\n\n\n\n수집\n416건\n489건\n905건\n\n\n중복제거 후\n-\n-\n895건\n\n\n정제 후\n416건\n311건\n727건\n\n\nPRISMA 최종\n315편\n209편\n524편",
+    "crumbs": [
+      "Methodology and Method",
+      "Data"
+    ]
+  },
+  {
+    "objectID": "mm_data.html#prisma-흐름도",
+    "href": "mm_data.html#prisma-흐름도",
+    "title": "Data",
+    "section": "PRISMA 흐름도",
+    "text": "PRISMA 흐름도\n수집 905건 (KCI 416 + WoS 489)\n  |\n  v\n중복제거 895건 (-10건, DOI/제목 매칭)\n  |\n  v\nAI-PRISMA 스크리닝 (ScholarRAG v1.2.4)\n  |--- 자동 포함 (score &gt;= 40): 449건 (50.2%)\n  |--- 검토 대기:              250건 (27.9%)\n  |--- 자동 제외:              196건 (21.9%)\n  |\n  v\n최종 선정 524건\n  (자동포함 449 + 검토대기 상위30% 75건)\n  |--- KCI: 315편 (60.1%)\n  |--- WoS: 209편 (39.9%)",
+    "crumbs": [
+      "Methodology and Method",
+      "Data"
+    ]
+  },
+  {
+    "objectID": "mm_data.html#시기별-분포",
+    "href": "mm_data.html#시기별-분포",
+    "title": "Data",
+    "section": "시기별 분포",
+    "text": "시기별 분포\n\n\n\n\n\n\n\n\n\n\n\n시기\n연도\nKCI\nWoS\n합계\n비고\n\n\n\n\n태동기\n1996-2005\n소수\n9편\n~9편\n콘텐츠 산업 개념 형성기\n\n\n성장기\n2006-2010\n66건\n소수\n~59편\n한류 드라마, 정책 본격화\n\n\n확산기\n2011-2015\n89건\n소수\n~84편\n방법론 다양화, 장르 세분화\n\n\n전환기\n2016-2020\n106건\n소수\n~107편\n넷플릭스 진출, 4차 산업혁명\n\n\n성숙기\n2021-2026\n155건\nWoS 77.9% 집중\n~265편\n메타버스, AI, K-콘텐츠",
+    "crumbs": [
+      "Methodology and Method",
+      "Data"
+    ]
+  },
+  {
+    "objectID": "mm_data.html#데이터-특성-비교",
+    "href": "mm_data.html#데이터-특성-비교",
+    "title": "Data",
+    "section": "데이터 특성 비교",
+    "text": "데이터 특성 비교\n\n\n\n지표\nKCI\nWoS\n\n\n\n\n기간\n2004-2026\n1996-2026\n\n\n학술지 수\n228개\n~200개\n\n\n평균 참고문헌\n28편\n65편 (2.3배)\n\n\n평균 인용\n5.0회\n20.6회 (4.1배)\n\n\n키워드 수\n1,506개\n1,224개\n\n\n키워드 겹침률\n-\n4.3% (공통 118개)",
+    "crumbs": [
+      "Methodology and Method",
+      "Data"
+    ]
+  },
+  {
+    "objectID": "mm_data.html#데이터-파일",
+    "href": "mm_data.html#데이터-파일",
+    "title": "Data",
+    "section": "데이터 파일",
+    "text": "데이터 파일\n\n\n\n파일\n설명\n\n\n\n\n콘텐츠_KCI목록(260328).xls\nKCI 원본 (416건, 41컬럼)\n\n\nwos_savedrecs.txt\nWoS 원본 (489건)\n\n\nkci_content_industry_clean.csv\nKCI 정제 (416건, 18컬럼)\n\n\nfinalized_papers.json\nPRISMA 최종 선정 (524편)",
+    "crumbs": [
+      "Methodology and Method",
+      "Data"
+    ]
+  },
+  {
+    "objectID": "lr_search_incl_excl.html",
+    "href": "lr_search_incl_excl.html",
+    "title": "Searching and Inclusion & Exclusion",
+    "section": "",
+    "text": "검색 전략",
+    "crumbs": [
+      "Literature Review",
+      "Searching and Inclusion & Exclusion"
+    ]
+  },
+  {
+    "objectID": "lr_search_incl_excl.html#검색-전략",
+    "href": "lr_search_incl_excl.html#검색-전략",
+    "title": "Searching and Inclusion & Exclusion",
+    "section": "",
+    "text": "Round 1: KCI 검색\n\n데이터베이스: KCI (한국학술지인용색인)\n검색어: 제목에 “콘텐츠” AND “산업”\n결과: 416건 (2004-2026)\n\n\n\nRound 2: WoS 검색\n\n데이터베이스: Web of Science\n검색어: TS=(“content industry” OR “creative industry” OR “cultural industry”)\n결과: 489건 (1996-2026)\n정제: 주제 무관 178건 제거 -&gt; 311건\n\n\n\n합산\n\n총 수집: 905건 (KCI 416 + WoS 489)\n중복 제거: -10건 (DOI/제목 매칭) -&gt; 895건",
+    "crumbs": [
+      "Literature Review",
+      "Searching and Inclusion & Exclusion"
+    ]
+  },
+  {
+    "objectID": "lr_search_incl_excl.html#prisma-2020-스크리닝",
+    "href": "lr_search_incl_excl.html#prisma-2020-스크리닝",
+    "title": "Searching and Inclusion & Exclusion",
+    "section": "PRISMA 2020 스크리닝",
+    "text": "PRISMA 2020 스크리닝\n\n스크리닝 도구\n\nScholarRAG v1.2.4 (systematic_review 모드)\nChromaDB + all-MiniLM-L6-v2 (title + abstract 임베딩)\n적합성 점수(relevance score) 기반 자동 분류\n\n\n\n스크리닝 결과\n\n\n\n분류\n건수\n비율\n기준\n\n\n\n\n자동 포함\n449건\n50.2%\nscore &gt;= 40\n\n\n검토 대기\n250건\n27.9%\n40 &gt; score &gt; 하위 경계\n\n\n자동 제외\n196건\n21.9%\nscore &lt;= 하위 경계\n\n\n\n\n\n포함/제외 기준\n포함 기준 (Inclusion Criteria):\n\n콘텐츠 산업을 주요 연구 대상으로 다루는 논문\n문화산업, 창조산업, 디지털 콘텐츠 산업 관련 연구\n콘텐츠 비즈니스, 정책, 기술혁신, 노동 등 산업적 관점의 연구\nKCI 등재지 또는 WoS 인덱싱 학술지에 게재된 논문\n\n제외 기준 (Exclusion Criteria):\n\n콘텐츠 산업과 관련 없는 자연과학, 의학, 공학 논문\n‘콘텐츠’ 또는 ’산업’이 다른 맥락으로 사용된 논문\n학술대회 발표자료, 서평, 편집자 논평 등 비학술논문\n\n\n\n최종 선정\n\n\n\n출처\n선정\n비율\n\n\n\n\nKCI\n315편\n60.1%\n\n\nWoS\n209편\n39.9%\n\n\n합계\n524편\n100%\n\n\n\n최종 524편 = 자동포함 449건 + 검토대기 상위 30% (75건)",
+    "crumbs": [
+      "Literature Review",
+      "Searching and Inclusion & Exclusion"
+    ]
+  },
+  {
+    "objectID": "lr_search_incl_excl.html#적합성-점수-분포",
+    "href": "lr_search_incl_excl.html#적합성-점수-분포",
+    "title": "Searching and Inclusion & Exclusion",
+    "section": "적합성 점수 분포",
+    "text": "적합성 점수 분포\n\n\n\n범위\n표시\n설명\n\n\n\n\nscore &gt;= 75\n[+]\n상위 10% – 핵심 문헌\n\n\n35 &lt; score &lt; 75\n[=]\n중간 80%\n\n\nscore &lt;= 35\n[-]\n하위 10%",
+    "crumbs": [
+      "Literature Review",
+      "Searching and Inclusion & Exclusion"
+    ]
+  },
+  {
+    "objectID": "lr_referencelist.html",
+    "href": "lr_referencelist.html",
+    "title": "Reference List",
+    "section": "",
+    "text": "Round 1\nCategory, Classification and Decision Note for Selected Literature in Rounds",
+    "crumbs": [
+      "Literature Review",
+      "Reference List"
+    ]
+  },
+  {
+    "objectID": "lr_referencelist.html#round-2",
+    "href": "lr_referencelist.html#round-2",
+    "title": "Reference List",
+    "section": "Round 2",
+    "text": "Round 2",
+    "crumbs": [
+      "Literature Review",
+      "Reference List"
+    ]
+  },
+  {
+    "objectID": "lr_referencelist.html#round-3",
+    "href": "lr_referencelist.html#round-3",
+    "title": "Reference List",
+    "section": "Round 3",
+    "text": "Round 3",
+    "crumbs": [
+      "Literature Review",
+      "Reference List"
+    ]
+  },
+  {
+    "objectID": "lr_referencelist.html#additional-during-and-after-writing",
+    "href": "lr_referencelist.html#additional-during-and-after-writing",
+    "title": "Reference List",
+    "section": "Additional (during and after writing)",
+    "text": "Additional (during and after writing)",
+    "crumbs": [
+      "Literature Review",
+      "Reference List"
+    ]
+  },
+  {
+    "objectID": "lr_research_problem.html",
+    "href": "lr_research_problem.html",
+    "title": "Reserach Problems",
+    "section": "",
+    "text": "연구 공백의 3가지 차원\n본 체계적 문헌고찰에서 확인된 콘텐츠 산업 연구의 공백은 다음 3가지 차원으로 구성된다.",
+    "crumbs": [
+      "Literature Review",
+      "Reserach Problems"
+    ]
+  },
+  {
+    "objectID": "lr_research_problem.html#연구-공백의-3가지-차원",
+    "href": "lr_research_problem.html#연구-공백의-3가지-차원",
+    "title": "Reserach Problems",
+    "section": "",
+    "text": "1. 지식 체계의 비대칭\nKCI와 WoS의 키워드 겹침률이 4.3%에 불과하다 (공통 118개 / KCI 1,506 + WoS 1,224). 국내외 연구 커뮤니티가 사실상 다른 어휘 체계를 사용하고 있으며, 동일한 키워드도 맥락에서 다른 중요도를 가진다 (Spearman rho = -0.103, p = 0.846).\n\nKCI는 “digital contents”(복수형), WoS는 “digital content”(단수형)\n“business model”: WoS 14건 vs KCI 2건\n“cultural industry” vs “creative industry”: KCI는 양쪽 사용, WoS는 “creative” 선호\n\n\n\n2. 연구 초점의 비대칭\n국내 연구는 정책 담론에 편중, 국제 연구는 비즈니스 분석에 집중.\n\n\n\n영역\nKCI\nWoS\n갭\n\n\n\n\n정책/제도\n21.1%\n8.2%\n+12.9 (KCI 편중)\n\n\n수익/비즈니스\n12.1%\n16.9%\n-4.8 (WoS 편중)\n\n\n기술혁신\n36.5%\n40.6%\n-4.1 (WoS 편중)\n\n\n글로벌/한류\n11.6%\n8.4%\n+3.2\n\n\n\n\n\n3. 진화 동인의 비대칭\n\nKCI의 동인: 정부 정책 변화 (창조경제, 콘텐츠진흥법, 한류 정책)\nWoS의 동인: 시장/기술 논리 (디지털 전환, 비즈니스 모델 혁신, AI)\n\n용어 변화가 이를 반영: “contents industry” -&gt; “content industry” -&gt; “K-content”",
+    "crumbs": [
+      "Literature Review",
+      "Reserach Problems"
+    ]
+  },
+  {
+    "objectID": "lr_research_problem.html#가지-핵심-공백",
+    "href": "lr_research_problem.html#가지-핵심-공백",
+    "title": "Reserach Problems",
+    "section": "4가지 핵심 공백",
+    "text": "4가지 핵심 공백\n\n기술 중심 편중: 전체 524편 중 62%(326편)가 기술혁신 키워드 포함. 기술의 콘텐츠 ‘적용 가능성’ 탐색에 그치며, 산업 구조 재편 효과 분석은 부족\n창작자 노동 연구 결핍: 노동/인력 연구 47편(9%)에 불과. 플랫폼 노동, 알고리즘 기반 수익 분배, AI 대체 효과 연구 거의 부재\n기업 수준 분석 부재: 대부분 산업 전체 수준 거시 분석. 개별 기업 수익모델 비교, 경쟁 전략 분석은 극히 제한적\n가치사슬 통합 연구 공백: 기획-제작-유통-소비-2차활용 전반 통합 조망 연구 부재. 대부분 특정 단계(제작 또는 유통)에 편중",
+    "crumbs": [
+      "Literature Review",
+      "Reserach Problems"
+    ]
+  },
+  {
+    "objectID": "lr_research_problem.html#연구질문",
+    "href": "lr_research_problem.html#연구질문",
+    "title": "Reserach Problems",
+    "section": "연구질문",
+    "text": "연구질문\n위의 연구 공백에 기반하여 다음 4개의 연구질문을 설정하였다.\n\nRQ1: 콘텐츠 산업 연구는 시기별로 어떠한 주요 주제와 개념적 전환을 보여 왔는가?\nRQ2: 콘텐츠 산업 연구에서 비즈니스적 관점은 어떠한 하위 영역으로 구성되어 왔는가?\nRQ3: 핵심 키워드와 주제들은 어떠한 지식 네트워크를 형성하고 있는가?\nRQ4: 주요 편중과 공백은 무엇이며, 향후 연구의 확장 방향은?",
+    "crumbs": [
+      "Literature Review",
+      "Reserach Problems"
+    ]
+  },
+  {
+    "objectID": "lr_model_and_key_references.html",
+    "href": "lr_model_and_key_references.html",
+    "title": "Key References",
+    "section": "",
+    "text": "상위 15편 핵심 문헌\n524편 중 적합성 점수(relevance score) 기준 상위 15편이다. 이들은 콘텐츠 산업 연구의 핵심 흐름을 집약적으로 보여준다.",
+    "crumbs": [
+      "Literature Review",
+      "Key References"
+    ]
+  },
+  {
+    "objectID": "lr_model_and_key_references.html#상위-15편-핵심-문헌",
+    "href": "lr_model_and_key_references.html#상위-15편-핵심-문헌",
+    "title": "Key References",
+    "section": "",
+    "text": "#\n저자\n연도\n제목\n학술지\n점수\n출처\n\n\n\n\n1\n주재원\n2014\n방송포맷산업에 대한 연대기적 고찰: 영국 방송포맷산업의 사회역사적 배경\n디지털융복합연구\n90\nKCI\n\n\n2\n권창규\n2014\n’문화’에서 ’콘텐츠’로: 한국 문화의 산업화와 한류화\n대중서사연구\n90\nKCI\n\n\n3\nHoai\n2021\nA bibliometric analysis of cultural and creative industries\nDIGITAL CREATIVITY\n90\nWoS\n\n\n4\n송윤아\n2024\n디지털 미디어 콘텐츠 플랫폼, 넷플릭스의 글로벌 성장전략\n한국정보통신학회논문지\n90\nKCI\n\n\n5\nAmmirato\n2025\nCultural industries 4.0: how digitalisation is reshaping the sector\nIJKBD\n90\nWoS\n\n\n6\n안인자\n2006\n문화분류와 문화콘텐츠산업분류에 관한 연구\n한국비블리아학회지\n85\nKCI\n\n\n7\n이장우\n2007\n한류드라마 콘텐츠의 국제경쟁력과 해외진출 전략\n경영학연구\n85\nKCI\n\n\n8\n이찬도\n2012\n한류콘텐츠의 확산을 위한 글로벌 마케팅제고 방안\ne-비즈니스연구\n85\nKCI\n\n\n9\n허식\n2013\n문화콘텐츠 경쟁력평가를 위한 산업플랫폼 제안\n경영교육연구\n85\nKCI\n\n\n10\nDennstedt\n2017\nReinvention of Publishers’ Revenue Model\nMEDIA AND COMMUNICATION\n85\nWoS\n\n\n11\n박종구\n2019\n방송산업 수요기반 공공데이터 조성에 관한 시론\n방송통신연구\n85\nKCI\n\n\n12\nLi\n2020\nThe digital transformation of business models in the creative industries\nTECHNOVATION\n85\nWoS\n\n\n13\n石姝丽\n2021\n第四次工业革命下中国影像内容产业巨变\nJournal of China Studies\n85\nKCI\n\n\n14\nRodriguez-Insuasti\n2022\nCreative Economy: A Worldwide Research in Business\nSUSTAINABILITY\n85\nWoS\n\n\n15\n송시형\n2023\n영상 콘텐츠 제작 시스템 변화와 산업 동향: OTT 플랫폼 중심\n융합인문학\n85\nKCI",
+    "crumbs": [
+      "Literature Review",
+      "Key References"
+    ]
+  },
+  {
+    "objectID": "lr_model_and_key_references.html#핵심-문헌의-공통-특징",
+    "href": "lr_model_and_key_references.html#핵심-문헌의-공통-특징",
+    "title": "Key References",
+    "section": "핵심 문헌의 공통 특징",
+    "text": "핵심 문헌의 공통 특징\n상위 논문에서 공통적으로 발견되는 3가지 특징:\n\n구조적 분석: 단순 현상 기술을 넘어 산업의 구조적 변화를 분석\n맥락적 관점: 역사적 또는 비교 관점을 채택하여 시간적/공간적 맥락을 제공\n전략적 시사점: 정책적 함의를 넘어 비즈니스 전략 차원의 시사점을 도출",
+    "crumbs": [
+      "Literature Review",
+      "Key References"
+    ]
+  },
+  {
+    "objectID": "lr_model_and_key_references.html#학문-분야별-핵심-문헌-분포",
+    "href": "lr_model_and_key_references.html#학문-분야별-핵심-문헌-분포",
+    "title": "Key References",
+    "section": "학문 분야별 핵심 문헌 분포",
+    "text": "학문 분야별 핵심 문헌 분포\n\n\n\n분야\n대표 문헌\n관점\n\n\n\n\n경영학\n이장우(2007), 송윤아(2024)\n기업 전략, 경쟁우위\n\n\n인문학\n권창규(2014), 주재원(2014)\n역사적 고찰, 개념 형성\n\n\n문헌정보학\n안인자(2006)\n산업 분류 체계\n\n\n커뮤니케이션학\n송시형(2023), 박종구(2019)\n미디어 산업 동향\n\n\n계량서지학\nHoai(2021), Rodriguez-Insuasti(2022)\n글로벌 연구 지형\n\n\n기술경영\nLi(2020), Ammirato(2025)\n디지털 전환, Industry 4.0",
+    "crumbs": [
+      "Literature Review",
+      "Key References"
+    ]
+  },
+  {
+    "objectID": "pp_product.html",
+    "href": "pp_product.html",
+    "title": "Products",
+    "section": "",
+    "text": "연구 산출물 목록",
+    "crumbs": [
+      "Products"
+    ]
+  },
+  {
+    "objectID": "pp_product.html#연구-산출물-목록",
+    "href": "pp_product.html#연구-산출물-목록",
+    "title": "Products",
+    "section": "",
+    "text": "분석 파이프라인 산출물\n\n\n\n\n\n\n\n\n\n#\n유형\n산출물\n설명\n\n\n\n\n1\n데이터\nkci_content_industry_clean.csv\nKCI 정제 데이터 (416건 x 18컬럼)\n\n\n2\n데이터\nfinalized_papers.json\nPRISMA 최종 선정 (524편)\n\n\n3\n분석\nR 스크립트 14개 (Phase 1-6)\n6 Phase 교차비교 분석 파이프라인\n\n\n4\n시각화\n분석 그래프 35개\n연도추이, 네트워크, STM, Thematic Map 등\n\n\n5\n표\n분석 테이블 25개\n기술통계, 키워드, 갭 분석 등\n\n\n\n\n\nScholarRAG 문서 생성 산출물\n\n\n\n\n\n\n\n\n#\n파일\n설명\n\n\n\n\n1\n01_guiding_table.csv\n구조화 분석표 (524편 x 19열)\n\n\n2\n02_annotated_bibliography_kr.md\n주석 참고문헌 (524편, 상위10%/중간/하위10% 표시)\n\n\n3\n03_conceptual_framework_kr.md\n개념적 프레임워크 (8이론, 4층 다이어그램, 이론-RQ 매트릭스)\n\n\n4\n04_integrative_literature_review_kr.md\n통합적 문헌고찰 (~9,500자, APA 7th)\n\n\n5\nRQ_essays.md\nRQ별 에세이 4편 (각 ~1,000자)\n\n\n\n\n\n논문 초고\n\n\n\n#\n파일\n설명\n\n\n\n\n1\nDraft.qmd\n논문 본문 (Quarto + apaquarto, APA 7th Edition)\n\n\n2\nreference.bib\n참고문헌 (532항목: 방법론 8 + 논문 524)\n\n\n3\nfigure/\n분석 그래프 21개 (Phase 1-6 선별)\n\n\n4\ndata/\n분석 CSV 7개\n\n\n\n\n\n분석 보고서\n\n\n\n#\n파일\n설명\n\n\n\n\n1\nSLR_분석보고서.qmd\nPhase 1-6 통합 Quarto 보고서\n\n\n2\n최종_통합분석보고서.md\nKCI-WoS 교차비교 종합 해석 보고서\n\n\n3\nPhase2-5_통합분석보고서.md\nPhase 2-5 상세 분석 보고서\n\n\n\n\n\n연구 문서\n\n\n\n\n\n\n\n\n#\n파일\n설명\n\n\n\n\n1\n연구설정.md\n연구자, 주제, RQ, 검색어\n\n\n2\n연구과정_문서화.md\n전체 연구 과정 기록\n\n\n3\n콘텐츠산업_SLR_연구파이프라인_가이드.md\n파이프라인 상세 가이드",
+    "crumbs": [
+      "Products"
+    ]
+  },
+  {
+    "objectID": "pp_product.html#논문-초고-구성",
+    "href": "pp_product.html#논문-초고-구성",
+    "title": "Products",
+    "section": "논문 초고 구성",
+    "text": "논문 초고 구성\n\n서론 (hook, 연구배경, 연구문제, 연구목적)\n이론적 배경 (8대 이론, 시기별 부상, 변수 체계, 이론-RQ 매핑)\n연구 방법 (검색 전략, PRISMA 선별, 6 Phase 분석)\n연구 결과 (RQ1-4, 개념적 프레임워크)\n논의 (이론적 기여, 실천적 시사점, 향후 연구, 한계)\n결론",
+    "crumbs": [
+      "Products"
+    ]
+  }
+]
